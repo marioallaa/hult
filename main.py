@@ -68,13 +68,17 @@ import sys
 
 if __name__ == "__main__":
     if (sys.argv[1] == 'morning'):
-        # print(f"doing morning check: {len(sys.argv)}")
+        print(f"doing morning check: {len(sys.argv)}")
         doMorningChecks()
     elif (sys.argv[1] == 'night'):
         doNightChecks()
-        # print(f"doing night check: {len(sys.argv)}")
-    # elif (sys.argv[1] == 'solve'):
         print(f"doing night check: {len(sys.argv)}")
+    else:
+        print(""" 
+        _______ HOW TO USE ______
+        Do morning checks, type command: python3 main.py morning
+        Do night checks, type command: python3 main.py night
+        """)
 
 
 # doMorningChecks()
